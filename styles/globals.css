@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-28 {
+  background: linear-gradient(95.08deg, #5f2eea 2.49%, #e359f9 97.19%);
+}
+
+.hero-clip {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-card-bg-light-half {
+  background-image: url('../public/ctapatternlight.png');
+}
+
+.register-bg-right-top {
+  background-position: right top;
+  background-image: url('/tr.png');
+}
+
+.register-bg-right-bottom {
+  background-position: right bottom;
+  background-image: url('/br.svg');
+}
+
+.register-bg-left {
+  background-position: left;
+  background-image: url('/lc.png');
+}
+
+@media (prefers-color-scheme: dark) {
+  .register-bg-right-top {
+    background-image: url('/trd.png');
+  }
+
+  .register-bg-right-bottom {
+    background-image: url('/brd.svg');
+  }
+
+  .register-bg-left {
+    background-image: url('/lcd.png');
+  }
+}

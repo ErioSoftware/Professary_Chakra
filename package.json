@@ -1,0 +1,52 @@
+{
+    "name": "professary",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "gen:theme-typings": "chakra-cli tokens ./chakra/index.ts",
+        "postinstall": "npm run gen:theme-typings"
+    },
+    "dependencies": {
+        "@chakra-ui/react": "^1.8.8",
+        "@emotion/react": "^11.0.0",
+        "@emotion/styled": "^11.0.0",
+        "@hcaptcha/react-hcaptcha": "^0.3.9",
+        "@headlessui/react": "^1.4.3",
+        "@heroicons/react": "^1.0.5",
+        "@types/react": "^17.0.38",
+        "axios": "^0.24.0",
+        "cookies-next": "^2.0.3",
+        "debounce": "^1.2.1",
+        "faunadb": "^4.5.2",
+        "feed": "^4.2.2",
+        "framer-motion": "^4.0.0",
+        "js-search": "^2.0.0",
+        "mailersend": "^1.3.1",
+        "next": "^12.0.9",
+        "path-equal": "^1.1.3",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-spinners": "^0.11.0",
+        "react-timer-hook": "^3.0.5",
+        "recharts": "^2.1.8",
+        "remark": "^14.0.2",
+        "remark-html": "^15.0.1",
+        "throttle-debounce": "^3.0.1",
+        "typescript": "^4.5.5"
+    },
+    "devDependencies": {
+        "@chakra-ui/cli": "^2.1.2",
+        "@tailwindcss/forms": "^0.4.0",
+        "@tailwindcss/typography": "^0.5.0",
+        "@types/recharts": "^1.8.23",
+        "autoprefixer": "^10.4.0",
+        "eslint": "8.4.1",
+        "eslint-config-next": "12.0.7",
+        "postcss": "^8.4.5",
+        "prettier": "^2.5.1",
+        "tailwindcss": "^3.0.2"
+    }
+}
