@@ -42,10 +42,10 @@ export const ResultRow: FC<ResultRowProps> = props => {
       px="0"
       rounded="xl"
       shadow="lg"
-      bg="greyscale.off-white"
       justifyItems="start"
       placeItems="center"
-      _dark={{ bg: 'greyscale.off-dark' }}>
+      bg="greyscale.off-white"
+      _dark={{ bg: 'greyscale.off-black' }}>
       <Flex alignItems="center" experimental_spaceX="4">
         <Flex
           w="12"

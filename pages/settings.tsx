@@ -247,7 +247,7 @@ const SettingsPage: NextPage = () => {
               rounded="2xl"
               shadow="lg"
               bg="greyscale.off-white"
-              _dark={{ bg: 'greyscale.off-dark' }}>
+              _dark={{ bg: 'greyscale.off-black' }}>
               <Flex>
                 <Flex
                   w="64px"

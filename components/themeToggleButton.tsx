@@ -1,5 +1,4 @@
 import { FunctionComponent, useEffect, useState } from 'react'
-import { useTheme } from 'next-themes'
 import { IconButton, useColorMode } from '@chakra-ui/react'
 
 const ThemeToggleButton: FunctionComponent = () => {
@@ -52,15 +51,13 @@ const ThemeToggleButton: FunctionComponent = () => {
 
 const MobileThemeToggleButton: FunctionComponent = () => {
   const [mounted, setMounted] = useState(false)
-  const { resolvedTheme, setTheme } = useTheme()
   //This is used to toggle chakra theme
-  const { toggleColorMode } = useColorMode()
+  const { toggleColorMode, colorMode } = useColorMode()
 
   useEffect(() => setMounted(true), [])
 
   const handleClick = () => {
     toggleColorMode()
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
   }
 
   return (
@@ -68,7 +65,7 @@ const MobileThemeToggleButton: FunctionComponent = () => {
       type="button"
       className="transition-all duration-1000 ease-in-out"
       onClick={handleClick}>
-      {mounted && resolvedTheme === 'dark' ? (
+      {mounted && colorMode === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-4 h-4 text-gray-800 dark:text-gray-200"
