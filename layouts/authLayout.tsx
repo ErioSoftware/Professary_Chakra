@@ -17,10 +17,10 @@ export const AuthLayoutDesktop: FunctionComponent = ({ children }) => {
           display="grid"
           w="full"
           h="full"
-          bgSize="contain"
           bg="primary.default"
           _dark={{ bg: 'priamry.darkMode' }}
           placeItems="center"
+          bgSize="contain"
           backgroundImage="url('/auth-pattern.png')">
           <Flex alignItems="center">
             <Box>

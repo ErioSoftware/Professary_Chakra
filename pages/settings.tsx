@@ -107,7 +107,7 @@ const SettingsPage: NextPage = () => {
                   </Text>
                 </Box>
               </Flex>
-              <Box p="2" mt="2" rounded="2xl" _dark={{ bg: 'greyscale.body' }}>
+              <Box p="2" pb="1" mt="2" rounded="2xl" _dark={{ bg: 'greyscale.body' }}>
                 <Text variant="settingsInputDesktop">First Name</Text>
                 <Input
                   variant="settings"
@@ -116,7 +116,7 @@ const SettingsPage: NextPage = () => {
                   readOnly={!editMode}
                 />
               </Box>
-              <Box p="2" mt="2" rounded="2xl" _dark={{ bg: 'greyscale.body' }}>
+              <Box p="2" mt="2" pb="1" rounded="2xl" _dark={{ bg: 'greyscale.body' }}>
                 <Text variant="settingsInputDesktop">Last Name</Text>
                 <Input
                   variant="settings"
@@ -260,7 +260,7 @@ const SettingsPage: NextPage = () => {
                   _dark={{ bg: 'greyscale.body' }}>
                   <LockIcon />
                 </Flex>
-                <Box ml={{ xl: '8' }}>
+                <Flex flexDir="column" justifyContent="center" ml={{ xl: '8' }}>
                   <Box mt={{ base: '3', xl: '0' }}>
                     <Heading as="h2" variant="desktop-display-x-small">
                       My Password
@@ -280,7 +280,7 @@ const SettingsPage: NextPage = () => {
                       </Text>
                     </Button>
                   </Box>
-                </Box>
+                </Flex>
               </Flex>
             </GridItem>
             <GridItem colSpan={8} rowSpan={1}>

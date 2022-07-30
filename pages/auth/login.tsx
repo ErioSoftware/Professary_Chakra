@@ -5,6 +5,7 @@ import { FormEvent, useState } from 'react'
 
 import { useAuth } from '@/lib/auth'
 
+import { ArrowIcon } from '@/components/icons'
 import { AuthLayoutDesktop, AuthLayoutMobile } from '@/layouts/authLayout'
 import {
   Box,
@@ -12,13 +13,11 @@ import {
   Flex,
   FormLabel,
   Heading,
-  Icon,
   Input,
   Link as ChakraLink,
   Text
 } from '@chakra-ui/react'
 import SkewLoader from 'react-spinners/SkewLoader'
-import { ArrowIcon } from '@/components/icons'
 
 const LoginPage: NextPage = () => {
   const router = useRouter()
