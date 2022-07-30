@@ -43,6 +43,7 @@ export const lineHeights = {
   'mobile-text-small': '24px',
   'mobile-text-large': '32px'
 }
+
 export const letterSpacings = {
   'mobile-display-huge': ' 1px',
   'mobile-display-large': '1px',
@@ -163,11 +164,15 @@ export const fontVariants = {
   }
 }
 
+export const fonts = {
+  heading: 'Poppins',
+  body: 'Poppins'
+}
+
 export const Text: ComponentStyleConfig = {
   variants: {
     ...fontVariants,
     authQuestion: {
-      fontWeight: 'light',
       fontSize: 'desktop-text-medium',
       lineHeight: 'desktop-text-medium',
       letterSpacing: 'desktop-text-medium',
@@ -175,13 +180,11 @@ export const Text: ComponentStyleConfig = {
       _dark: { textColor: 'greyscale.line' }
     },
     authQuestionMobile: {
-      fontWeight: 'light',
       fontSize: 'text-sm',
       color: 'greyscale.body',
       _dark: { textColor: 'greyscale.line' }
     },
     authText: {
-      fontWeight: 'light',
       fontSize: 'mobile-text-large',
       lineHeight: 'mobile-text-large',
       letterSpacing: 'mobile-text-large',
@@ -189,7 +192,6 @@ export const Text: ComponentStyleConfig = {
       _dark: { color: 'greyscale.input' }
     },
     authTextMobile: {
-      fontWeight: 'light',
       fontSize: 'text-sm',
       color: 'greyscale.body',
       _dark: { textColor: 'greyscale.line' }
@@ -202,7 +204,6 @@ export const Text: ComponentStyleConfig = {
     },
     resultRowTitle: {
       color: 'greyscale.placeholder',
-      fontWeight: 'light',
       w: '20',
       display: { base: 'inline-block', xl: 'none' }
     }

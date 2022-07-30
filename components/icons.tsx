@@ -33,8 +33,7 @@ export const LogoIcon = (props: IconProps) => (
   <Icon
     width="12"
     height="12"
-    color="primary.default"
-    _dark={{ color: 'greyscale.off-white' }}
+    color="greyscale.off-white"
     viewBox="0 0 50 50"
     fill="none"
     cursor="pointer"

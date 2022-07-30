@@ -56,10 +56,9 @@ const LoginPage: NextPage = () => {
   return (
     <>
       <AuthLayoutDesktop>
-        <Box w="full" maxW="96" textAlign="left" className="w-full max-w-sm text-left">
+        <Box w="full" maxW="96" textAlign="left">
           <Heading
             as="h1"
-            fontWeight="bold"
             color="greyscale.off-black"
             fontSize="48px"
             _dark={{ color: 'greyscale.off-white' }}>

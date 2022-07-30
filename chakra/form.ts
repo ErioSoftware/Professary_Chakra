@@ -1,11 +1,11 @@
 import { ComponentStyleConfig } from '@chakra-ui/react'
-//Will set custom variants because of this error
-//github.com/chakra-ui/chakra-ui/issues/2347
+// Will set custom variants because of this error
+// github.com/chakra-ui/chakra-ui/issues/2347
 export const Input: ComponentStyleConfig = {
   baseStyle: {},
   variants: {
-    //Solid is default variant, but pseudo selectors
-    //must be explicity defined here
+    // Solid is default variant, but pseudo selectors
+    // must be explicity defined here
     login: {
       field: {
         border: '0',
@@ -14,7 +14,6 @@ export const Input: ComponentStyleConfig = {
         px: '6',
         height: '16',
         w: 'full',
-        fontWeight: 'light',
         textColor: 'greyscale.label',
         fontSize: 'desktop-text-small',
         letterSpacing: 'desktop-text-small',
