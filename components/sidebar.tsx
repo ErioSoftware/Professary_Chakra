@@ -56,7 +56,10 @@ const Sidebar = ({ sideBarLinks, active }: { sideBarLinks: IBarProps[]; active?:
             variant="ghost"
             leftIcon={<LogoutIcon width="6" height="6" mr="4" />}
             p="4"
-            w="fit-content">
+            w="fit-content"
+            outline="0px"
+            _focus={{ outline: '0px' }}
+            _active={{ outline: '0px' }}>
             <Text variant="desktop-link-small" color="greyscale.label">
               Logout
             </Text>

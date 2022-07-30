@@ -20,10 +20,15 @@ export const Button: ComponentStyleConfig = {
     ghost: {
       backgroundColor: 'transparent',
       border: '0px',
-      _dark: { backgroundColor: 'transparent' },
+      _dark: {
+        backgroundColor: 'transparent',
+        _hover: { backgroundColor: 'transparent', border: '0px' },
+        _focus: { border: '0px', backgroundColor: 'transparent' },
+        _active: { border: '0px', backgroundColor: 'transparent' }
+      },
       _hover: { backgroundColor: 'transparent', border: '0px' },
-      _focus: { border: '0px' },
-      _active: { border: '0px' }
+      _focus: { border: '0px', backgroundColor: 'transparent', outline: '0px' },
+      _active: { border: '0px', backgroundColor: 'transparent', outline: '0px' }
     },
     outline: {
       backgroundColor: 'transparent',

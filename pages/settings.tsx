@@ -34,7 +34,11 @@ const SettingsPage: NextPage = () => {
   }
 
   return (
-    <Box backgroundColor="greyscale.bg" _dark={{ backgroundColor: 'greyscale.ash' }} minH="100vh">
+    <Box
+      backgroundColor="greyscale.bg"
+      _dark={{ backgroundColor: 'greyscale.ash' }}
+      minH="100vh"
+      pt="3">
       <Box>
         <Box as="main" p={{ base: '6', xl: '0' }} mx="auto" maxW="5xl">
           <Flex alignItems="center" justifyContent="space-between">
@@ -76,7 +80,6 @@ const SettingsPage: NextPage = () => {
               p="6"
               as="section"
               rounded="2xl"
-              shadow="lg"
               bg="greyscale.off-white"
               _dark={{ bg: 'greyscale.off-black' }}>
               <Flex alignItems="center" justifyContent="space-between">
@@ -147,7 +150,6 @@ const SettingsPage: NextPage = () => {
               ml={{ xl: '6' }}
               p="6"
               px={{ xl: '10' }}
-              shadow="lg"
               mt={{ base: '10', xl: 0 }}
               rounded="2xl"
               h="min-content"
@@ -245,7 +247,6 @@ const SettingsPage: NextPage = () => {
               p="6"
               mt={{ base: '10', xl: '0' }}
               rounded="2xl"
-              shadow="lg"
               bg="greyscale.off-white"
               _dark={{ bg: 'greyscale.off-black' }}>
               <Flex>
@@ -289,7 +290,6 @@ const SettingsPage: NextPage = () => {
                 mt={{ base: '10', xl: '0' }}
                 p="6"
                 rounded="2xl"
-                shadow="lg"
                 bg="greyscale.off-white"
                 _dark={{ bg: 'greyscale.off-black' }}>
                 <Button
