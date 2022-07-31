@@ -2,7 +2,7 @@ import { Sidebar } from '@/components'
 import { CogIcon, LogoIcon, MenuIcon } from '@/components/icons'
 import { useAuth } from '@/lib/auth'
 import { Box, Button, Flex, IconButton, Text, useColorMode } from '@chakra-ui/react'
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode, useEffect, useState } from 'react'
@@ -76,9 +76,9 @@ export const DashboardLayout = ({
                 _focus={{ border: '0px' }}
                 onClick={handleClick}>
                 {mounted && colorMode === 'dark' ? (
-                  <SunIcon className="text-greyscale-placeholder dark:text-primary-darkMode w-6 h-6" />
+                  <IoSunnyOutline size="1.5em" color="#A0A3BD" />
                 ) : (
-                  <MoonIcon className="text-greyscale-placeholder dark:text-primary-darkMode w-6 h-6" />
+                  <IoMoonOutline size="1.5em" color="#A0A3BD" />
                 )}
               </Button>
               <Box>

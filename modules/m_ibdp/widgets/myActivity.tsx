@@ -16,7 +16,6 @@ export const MyActivity: FunctionComponent = () => {
         mt="2"
         bg="greyscale.off-white"
         _dark={{ bg: 'greyscale.off-black' }}
-        shadow="lg"
         rounded="xl">
         <Box h="full" w="full" ml="-4">
           <BarChart />

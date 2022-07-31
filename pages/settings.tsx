@@ -5,7 +5,7 @@ import { createRef, useState } from 'react'
 import { useAuth } from '@/lib/auth'
 
 import { DownloadIcon, EditIcon, LockIcon, TrashIcon } from '@/components/icons'
-import { XIcon } from '@heroicons/react/outline'
+import { IoClose } from 'react-icons/io5'
 import { NextPage } from 'next'
 import {
   Box,
@@ -60,11 +60,10 @@ const SettingsPage: NextPage = () => {
               h="12"
               backgroundColor="white"
               color="greyscale.ash"
-              shadow="sm"
               _dark={{ backgroundColor: 'greyscale.off-black', color: 'white' }}
               _hover={{ color: 'greyscale.off-black' }}
               onClick={async () => await router.push('/')}>
-              <XIcon className="w-6 h-6" />
+              <IoClose />
             </IconButton>
           </Flex>
           <Grid

@@ -29,7 +29,6 @@ export const MySuperpower: FC = () => {
         h={{ xl: '72' }}
         p="4"
         mt="2"
-        shadow="lg"
         rounded="xl"
         bg="greyscale.off-white"
         _dark={{ bg: 'greyscale.off-black' }}>

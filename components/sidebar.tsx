@@ -8,7 +8,7 @@ const BarItem = ({ link, active }: { link: IBarProps; active?: string }) => {
   const { href, label, icon } = link.link
 
   return (
-    <ListItem my="5">
+    <ListItem mb="5">
       <Link href={href} passHref>
         <ChakraLink
           textDecoration="none"

@@ -1,6 +1,6 @@
 import { useAuth } from '@/lib/auth'
 import { classNames } from '@/utils'
-import { BookmarkIcon } from '@heroicons/react/outline'
+import { IoBookmarkOutline } from 'react-icons/io5'
 import { SkewLoader } from 'react-spinners'
 
 export const AddSubjectButton = ({
@@ -34,7 +34,7 @@ export const AddSubjectButton = ({
                 'ring-1 text-white dark:text-greyscale-ash w-full py-3 rounded-xl flex items-center justify-center',
                 'ring-primary-default dark:ring-primary-darkMode bg-primary-default dark:bg-primary-darkMode'
               )}>
-              <BookmarkIcon className="w-6 h-6" />
+              <IoBookmarkOutline />
               <span className="text-sm ml-2 font-semibold">Add to My Subjects</span>
             </button>
           ) : (

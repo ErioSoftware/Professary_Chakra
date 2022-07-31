@@ -3,7 +3,7 @@ import { authClient } from '@/lib/fauna'
 import { FC, FunctionComponent, ReactElement, useState } from 'react'
 import { query as q } from 'faunadb'
 import { DnaIcon, LanguageIcon, TrendUpIcon, ViewIcon } from '@/components/icons'
-import { RefreshIcon } from '@heroicons/react/outline'
+import { IoReload } from 'react-icons/io5'
 import { Badge, Box, Button, Flex, Grid, Heading, IconButton, Text } from '@chakra-ui/react'
 
 interface ResultRowProps {
@@ -39,14 +39,13 @@ export const ResultRow: FC<ResultRowProps> = props => {
       rowGap={{ base: 4, xl: 0 }}
       templateColumns="repeat(5, minmax(0, 1fr))"
       p="4"
-      px="0"
+      paddingStart="10"
       rounded="xl"
-      shadow="lg"
-      justifyItems="start"
-      placeItems="center"
+      placeItems="start"
+      alignItems="center"
       bg="greyscale.off-white"
       _dark={{ bg: 'greyscale.off-black' }}>
-      <Flex alignItems="center" experimental_spaceX="4">
+      <Flex alignItems="center" justifyContent="flex-start">
         <Flex
           w="12"
           h="12"
@@ -57,7 +56,7 @@ export const ResultRow: FC<ResultRowProps> = props => {
           rounded="xl">
           {props.icon}
         </Flex>
-        <Text>{props.subject}</Text>
+        <Text mx="10px">{props.subject}</Text>
       </Flex>
       <Box
         fontWeight={{ base: 'semibold', desktop: 'light' }}
@@ -99,9 +98,13 @@ export const ResultRowHeader: FC = () => {
   return (
     <Grid
       templateColumns="repeat(5, minmax(0, 1fr))"
-      px="6"
       py="2"
       mt="2"
+      p="4"
+      paddingStart="10"
+      rounded="xl"
+      placeItems="start"
+      alignItems="center"
       display={{ base: 'none', xl: 'grid' }}>
       {['Subject', 'Date', 'Score', 'Status'].map(itm => (
         <Text
@@ -171,7 +174,7 @@ export const UserTests: FunctionComponent = () => {
             aria-label="button"
             title="Sync Results"
             onClick={runSync}>
-            <RefreshIcon className="w-5 h-5 text-gray-500 dark:text-gray-200" />
+            <IoReload />
           </IconButton>
         </Flex>
       </Flex>
@@ -180,15 +183,13 @@ export const UserTests: FunctionComponent = () => {
       <Box experimental_spaceY="4" mt={{ base: '4', xl: '0' }}>
         <ResultRow
           date="26 Jul 2021"
-          icon={<TrendUpIcon className="w-7 h-7 dark:text-primary-darkMode text-primary-default" />}
+          icon={<TrendUpIcon color="primary.default" _dark={{ color: 'primary.darkMode' }} />}
           subject="Statistics"
           result="waiting"
         />
 
         <ResultRow
-          icon={
-            <LanguageIcon className="w-7 h-7 dark:text-primary-darkMode text-primary-default" />
-          }
+          icon={<LanguageIcon color="primary.default" _dark={{ color: 'primary.darkMode' }} />}
           subject="English"
           date="8 Jul 2021"
           grade={82}
@@ -196,7 +197,7 @@ export const UserTests: FunctionComponent = () => {
         />
 
         <ResultRow
-          icon={<DnaIcon className="w-7 h-7 dark:text-primary-darkMode text-primary-default" />}
+          icon={<DnaIcon color="primary.default" _dark={{ color: 'primary.darkMode' }} />}
           subject="Biology"
           date="2 Jul 2021"
           result="fail"

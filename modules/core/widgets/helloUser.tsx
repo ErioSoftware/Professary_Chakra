@@ -16,7 +16,6 @@ export const HelloUser: FunctionComponent = () => {
         justifyContent="space-between"
         p="8"
         rounded="2xl"
-        shadow="lg"
         bg="greyscale.off-white"
         _dark={{ bg: 'greyscale.off-black' }}
         className="bg-card-bg-light-half">

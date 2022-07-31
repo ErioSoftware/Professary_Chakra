@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useAuth } from '@/lib/auth'
 import Image from 'next/image'
-import { BellIcon, CogIcon } from '@heroicons/react/outline'
+import { AiOutlineSetting, AiOutlineBell } from 'react-icons/ai'
 import { FunctionComponent } from 'react'
 
 export const AuthHeader: FunctionComponent = () => {
@@ -46,10 +46,10 @@ export const AuthHeader: FunctionComponent = () => {
         </div>
         <div className="items-center space-x-8 flex">
           <button>
-            <CogIcon className="w-5 h-5 text-greyscale-label dark:text-greyscale-placeholder" />
+            <AiOutlineSetting />
           </button>
           <button className="relative">
-            <BellIcon className="w-5 h-5 text-greyscale-label dark:text-greyscale-placeholder" />
+            <AiOutlineBell />
             <span className="absolute top-0 right-0 w-2 h-2 rounded-full bg-primary-default dark:bg-primary-default" />
           </button>
           <div className="flex items-center space-x-4">
