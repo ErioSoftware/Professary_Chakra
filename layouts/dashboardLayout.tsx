@@ -28,7 +28,6 @@ export const DashboardLayout = ({
   return (
     <Box bg="greyscale.bg" _dark={{ bg: 'greyscale.ash' }}>
       <Box
-        id="soy-prueba"
         zIndex="20"
         bg="greyscale.off-white"
         _dark={{ bg: 'greyscale.ash' }}

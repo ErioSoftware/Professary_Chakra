@@ -206,6 +206,11 @@ export const Text: ComponentStyleConfig = {
       color: 'greyscale.placeholder',
       w: '20',
       display: { base: 'inline-block', xl: 'none' }
+    },
+    onboarding: {
+      letterSpacing: '0.75px',
+      color: 'greyscale.label',
+      _dark: { color: 'greyscale.line' }
     }
   }
 }
@@ -223,6 +228,11 @@ export const Heading: ComponentStyleConfig = {
       lineHeight: 'desktop-link-small',
       letterSpacing: 'desktop-link-small',
       fontWeight: 'medium',
+      color: 'greyscale.off-black',
+      _dark: { color: 'greyscale.off-white' }
+    },
+    onboarding: {
+      letterSpacing: '0.75px',
       color: 'greyscale.off-black',
       _dark: { color: 'greyscale.off-white' }
     }

@@ -50,6 +50,13 @@ export const Button: ComponentStyleConfig = {
       ringColor: 'greyscale.line',
       border: '0',
       h: '42px'
+    },
+    onboarding: {
+      rounded: '2xl',
+      height: '4rem',
+      letterSpacing: '0.75px',
+      textColor: 'greyscale.off-white',
+      _dark: { textColor: 'primary.dark', bgColor: 'primary.darkMode' }
     }
   }
 }
