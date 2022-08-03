@@ -14,6 +14,7 @@ export const Input: ComponentStyleConfig = {
         px: '6',
         height: '16',
         w: 'full',
+        ringColor: 'primary.default',
         textColor: 'greyscale.label',
         fontSize: 'desktop-text-small',
         letterSpacing: 'desktop-text-small',

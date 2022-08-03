@@ -17,8 +17,8 @@ export const AuthLayoutDesktop: FunctionComponent = ({ children }) => {
           display="grid"
           w="full"
           h="full"
-          bg="primary.default"
-          _dark={{ bg: 'priamry.darkMode' }}
+          bgColor="primary.default"
+          _dark={{ bgColor: 'primary.darkMode' }}
           placeItems="center"
           bgSize="contain"
           backgroundImage="url('/auth-pattern.png')">
@@ -26,12 +26,21 @@ export const AuthLayoutDesktop: FunctionComponent = ({ children }) => {
             <Box>
               <Link href="/" passHref>
                 <ChakraLink>
-                  <LogoIcon height="50" width="50" />
+                  <LogoIcon
+                    height="50"
+                    width="50"
+                    color="greyscale.off-white"
+                    _dark={{ color: 'primary.dark' }}
+                  />
                 </ChakraLink>
               </Link>
             </Box>
             <Box ml="6">
-              <Text variant="desktop-display-small" fontWeight="bold" color="greyscale.off-white">
+              <Text
+                variant="desktop-display-small"
+                fontWeight="bold"
+                color="greyscale.off-white"
+                _dark={{ color: 'primary.dark' }}>
                 Professary
               </Text>
             </Box>
