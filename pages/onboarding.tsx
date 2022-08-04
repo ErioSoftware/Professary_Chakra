@@ -5,7 +5,14 @@ import Image from 'next/image'
 const OnboardingPage: NextPage = () => {
   const { colorMode } = useColorMode()
   return (
-    <Flex as="main" minH="100vh" px="8" pt="24" textAlign="center" display={{ xl: 'none' }}>
+    <Flex
+      as="main"
+      minH="100vh"
+      px="8"
+      textAlign="center"
+      justifyContent="center"
+      flexDir="column"
+      display={{ base: 'flex', xl: 'none' }}>
       <Heading as="h1" fontSize="40px" variant="onboarding">
         Sign Up
       </Heading>
