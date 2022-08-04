@@ -211,6 +211,14 @@ export const Text: ComponentStyleConfig = {
       letterSpacing: '0.75px',
       color: 'greyscale.label',
       _dark: { color: 'greyscale.line' }
+    },
+    profile: {
+      fontWeight: '500',
+      fontSize: '13px',
+      lineHeight: '22px',
+      letterSpacing: '0.25px',
+      color: 'greyscale.body',
+      _dark: { color: 'greyscale.line' }
     }
   }
 }
