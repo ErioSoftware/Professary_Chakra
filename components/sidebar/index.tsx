@@ -4,8 +4,15 @@ import { Box, Button, Flex, List, Text } from '@chakra-ui/react'
 import { LogoutIcon } from '../icons'
 import { BarItem } from './barItem'
 import { SidebarProfile } from './profile'
+import { SidebarSection } from './section'
 
-const Sidebar = ({ sideBarLinks, active }: { sideBarLinks: IBarProps[]; active?: string }) => {
+const Sidebar = ({
+  sidebarSections,
+  active
+}: {
+  sidebarSections: ISidebarSectionProps[]
+  active?: string
+}) => {
   const auth = useAuth()
   return (
     <Box
@@ -21,8 +28,8 @@ const Sidebar = ({ sideBarLinks, active }: { sideBarLinks: IBarProps[]; active?:
         <Flex flexDir="column" w="full">
           <SidebarProfile />
           <List marginTop={6}>
-            {sideBarLinks.map((link, index) => (
-              <BarItem key={index} link={link} active={active} />
+            {sidebarSections.map((it, index) => (
+              <SidebarSection key={index} section={it} active={active} />
             ))}
           </List>
         </Flex>

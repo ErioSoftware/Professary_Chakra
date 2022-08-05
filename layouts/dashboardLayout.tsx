@@ -10,11 +10,11 @@ import { ReactNode, useEffect, useState } from 'react'
 export const DashboardLayout = ({
   children,
   active,
-  sideBarLinks
+  sidebarSections
 }: {
   children: ReactNode
   active?: string
-  sideBarLinks: IBarProps[]
+  sidebarSections: ISidebarSectionProps[]
 }) => {
   const auth = useAuth()
   const [mounted, setMounted] = useState(false)
@@ -113,7 +113,7 @@ export const DashboardLayout = ({
         </Box>
       </Box>
       <Flex as="main" px={{ base: '6', xl: 0 }} mx="auto" maxW="7xl">
-        <Sidebar sideBarLinks={sideBarLinks} active={active} />
+        <Sidebar sidebarSections={sidebarSections} active={active} />
         {auth?.instance ? children : 'Loading'}
       </Flex>
     </Box>

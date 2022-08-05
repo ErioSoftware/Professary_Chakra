@@ -219,6 +219,10 @@ export const Text: ComponentStyleConfig = {
       letterSpacing: '0.25px',
       color: 'greyscale.body',
       _dark: { color: 'greyscale.line' }
+    },
+    sidebarTitle: {
+      letterSpacing: '0.75px',
+      color: 'greyscale.label'
     }
   }
 }
