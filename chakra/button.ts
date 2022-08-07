@@ -57,6 +57,10 @@ export const Button: ComponentStyleConfig = {
       letterSpacing: '0.75px',
       textColor: 'greyscale.off-white',
       _dark: { textColor: 'primary.dark', bgColor: 'primary.darkMode' }
+    },
+    tabSelected: {
+      backgroundColor: 'white',
+      _dark: { backgroundColor: 'greyscale.ash' }
     }
   }
 }
