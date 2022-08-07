@@ -60,6 +60,10 @@ export const colors = {
     700: '#4700ab',
     800: '#2e036a'
   },
+  checkbox: {
+    200: '#610bef',
+    500: '#610bef'
+  },
   switch: {
     200: '#5f2eea',
     500: '#5f2eea'

@@ -1,29 +1,23 @@
-import { Box, Checkbox, CheckboxProps, Flex, Input, Square, Text } from '@chakra-ui/react'
+import { Box, Center, Checkbox, CheckboxProps, Flex, Input, Square, Text } from '@chakra-ui/react'
 
-interface OptionSelectorProps extends CheckboxProps {
-  value: string
+interface OptionSelectorTextProps extends CheckboxProps {
   text: string | number
-  isDisabled?: boolean
 }
 
-export const OptionSelectorText = ({ value, text, isDisabled, ...props }: OptionSelectorProps) => {
+export const OptionSelectorText = ({ text, ...props }: OptionSelectorTextProps) => {
   return (
     <>
-      <Flex
-        flexDir="column"
-        color="black"
+      <Center
         maxWidth="fit-content"
-        maxH="fit-content"
-        justifyContent="center"
-        justifyItems="center"
-        textAlign="center"
+        flexDir="column"
+        px="5"
+        color="purple.600"
         __css={{ aspectRatio: '1' }}
-        p="8"
-        bg="greyscale.off-black"
-        rounded="lg">
-        <Checkbox size="lg" colorScheme="red" mx="auto" mt="3" {...props} />
-        <Text mt="1">{text}</Text>
-      </Flex>
+        bg="primary.bg"
+        rounded="3xl">
+        <Checkbox {...props} size="lg" colorScheme="checkbox" bg="cool-gray.300" />
+        <Text>soy el text</Text>
+      </Center>
     </>
   )
 }
