@@ -1,6 +1,5 @@
-import { OptionSelectorText } from '@/components/optionSelector'
 import { TabSelector } from '@/components/tabSelector'
-import { Box, Checkbox, CheckboxGroup, Flex } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { useState } from 'react'
 
 const VarietyPage = () => {
