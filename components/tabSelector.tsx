@@ -1,4 +1,4 @@
-import { Box, Button, Flex, FlexProps } from '@chakra-ui/react'
+import { Button, Flex, FlexProps } from '@chakra-ui/react'
 
 interface TabSelectorProps extends FlexProps {
   values: string[]
@@ -10,20 +10,17 @@ export const TabSelector = ({ values, setSelected, selected, ...props }: TabSele
   const isActive = (v: string) => v === selected
 
   return (
-    <>
-      <Flex bg="gray.300" _dark={{ bg: 'greyscale.off-black' }} rounded="lg" p="1" {...props}>
-        {values.map(v => (
-          <Button
-            bg="whiteAlpha.100"
-            variant={isActive(v) ? 'tabSelected' : 'ghost'}
-            rounded="lg"
-            onClick={() => setSelected(v)}
-            key={v}
-            _focus={{ border: '0px' }}>
-            {v}
-          </Button>
-        ))}
-      </Flex>
-    </>
+    <Flex bg="greyscale.input" _dark={{ bg: 'greyscale.ash' }} borderRadius="10px" p="1" {...props}>
+      {values.map(v => (
+        <Button
+          variant={isActive(v) ? 'tabSelected' : 'tabNotSelected'}
+          rounded="lg"
+          onClick={() => setSelected(v)}
+          key={v}
+          _focus={{ border: '0px' }}>
+          {v}
+        </Button>
+      ))}
+    </Flex>
   )
 }

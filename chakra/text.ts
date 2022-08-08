@@ -223,6 +223,37 @@ export const Text: ComponentStyleConfig = {
     sidebarTitle: {
       letterSpacing: '0.75px',
       color: 'greyscale.label'
+    },
+    metricLarge: {
+      fontWeight: '700',
+      fontSize: '48px',
+      lineHeight: '56px',
+      letterSpacing: '1px',
+      color: 'greyscale.off-black',
+      _dark: { color: 'greyscale.off-white' }
+    },
+    metricMedium: {
+      fontWeight: '700',
+      fontSize: '36px',
+      lineHeight: '48px',
+      letterSpacing: '1px',
+      color: 'greyscale.off-black',
+      _dark: { color: 'greyscale.off-white' }
+    },
+    metricSmall: {
+      fontSize: '20px',
+      lineHeight: '24px',
+      letterSpacing: '0.75px',
+      color: 'greyscale.label',
+      _dark: { color: 'greyscale.line' }
+    },
+    metricLabel: {
+      fontSize: '15px',
+      lineHeight: '20px',
+      textAlign: 'center',
+      letterSpacing: '0.75px',
+      color: 'greyscale.off-black',
+      _dark: { color: 'greyscale.line' }
     }
   }
 }

@@ -7,6 +7,9 @@ import { NextPage } from 'next'
 
 import { M_IBDP_Dashboard } from '@/modules/m_ibdp/layouts/dashboard'
 import { Box, Grid } from '@chakra-ui/react'
+import { SimpleMetric } from '../modules/m_ibdp/widgets/simpleMetric'
+import { MonthBarsMetric } from '../modules/m_ibdp/widgets/monthBars'
+import { GaugeMetric } from '../modules/m_ibdp/widgets/gauge'
 
 const Dashboard: NextPage = () => {
   return (
@@ -27,6 +30,9 @@ const Dashboard: NextPage = () => {
           mt="12">
           <MyActivity />
           <MySuperpower />
+          <SimpleMetric />
+          <MonthBarsMetric />
+          <GaugeMetric />
         </Grid>
         <Insights />
         <UserTests />
