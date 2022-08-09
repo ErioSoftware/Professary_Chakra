@@ -1,7 +1,7 @@
-import { ArrowIcon } from '@/components/icons'
+import { ArrowIcon, OptionExample1Icon, OptionExample2Icon } from '@/components/icons'
 import { IconCheckbox, TextCheckbox } from '@/components/optionSelectors'
 import { TabSelector } from '@/components/tabSelector'
-import { Box } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import { useState } from 'react'
 
@@ -15,12 +15,19 @@ const TestPage: NextPage = () => {
         selected={selected}
         values={['Label 1', 'Label 2', 'Label 3']}
       />
-      <TextCheckbox icon={<ArrowIcon ml={0} />} text="Click me!" />
-      <IconCheckbox
-        icon={<ArrowIcon ml={0} />}
-        centerIcon={<ArrowIcon ml={0} />}
-        text="Click me!"
-      />
+      <Flex my={2}>
+        <TextCheckbox text="Option One" mr={2} defaultChecked={true} />
+        <TextCheckbox text="Option Two" />
+      </Flex>
+      <Flex my={2}>
+        <IconCheckbox
+          centerIcon={<OptionExample1Icon ml={0} />}
+          text="Option One"
+          mr={2}
+          defaultChecked={true}
+        />
+        <IconCheckbox centerIcon={<OptionExample2Icon ml={0} />} text="Option Two" />
+      </Flex>
     </Box>
   )
 }
